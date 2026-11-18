@@ -107,8 +107,8 @@ MIN_CONF	0.3	Minimum keypoint confidence
 MIN_KEYPOINTS	6	Minimum visible joints
 MAX_PEOPLE	10	Maximum people per artwork
 MAX_SIDE	1024	Maximum artwork dimension
-W_ANGLE	    0.5	Joint angle weight
-W_VEC	    0.5	Bone direction weight
+W_ANGLE	        0.5	    Joint angle weight
+W_VEC	        0.5	    Bone direction weight
 MIRROR_INVARIANT	True	Enable mirrored pose matching
 
 ```
