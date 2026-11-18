@@ -6,11 +6,10 @@ An interactive artwork discovery system that connects human body movement with v
 Living Pose Gallery uses real-time body pose detection to find the closest matching human pose within a collection of artworks. As you move in front of your webcam, the application continuously compares your body position against a preprocessed artwork database and displays the closest match.
 
 The interface presents three synchronized views:
-
     1. Live Video: Webcam feed with real-time MediaPipe skeleton tracking.
     2. Pose Match: The corresponding artwork with its detected skeleton overlay.
     3. Original Artwork: The original artwork without annotations.
-
+    
 The system updates its artwork selection every five webcam frames, creating a continuous interaction between physical movement and art discovery.
 
 1. Clone the repository
@@ -46,8 +45,8 @@ Note: MediaPipe does not need to be installed with Python. It runs directly in t
 
 OpenCV is required for the original preprocessing implementation, but not for browser-based live tracking.
 ### Project Structure
-text
 
+```text
 living-pose-gallery/
 │
 ├── pose_gallery.py
@@ -60,6 +59,7 @@ living-pose-gallery/
 │
 └── cache/
     ├── poses.npz
+    │
     ├── images/
     │   ├── 0000_artwork_01.jpg
     │   └── 0001_artwork_02.jpg
@@ -67,6 +67,7 @@ living-pose-gallery/
     └── overlays/
         ├── 0000_artwork_01__p1.jpg
         └── 0001_artwork_02__p1.jpg
+```
 
 ### Usage
 Run:
